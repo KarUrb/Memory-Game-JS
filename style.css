@@ -1,0 +1,71 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} */
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.game-board {
+    margin: 5vh auto;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    width: 65vh;
+    height: 65vh;
+    border: 0.3vh solid #bbb;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    /*    
+    top: 40vh;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.game-tile {
+    position: absolute;
+    cursor: pointer;
+    width: 15vh;
+    height: 15vh;
+    flex-grow: 1;
+    /* height: 20vh; */
+    /* border: 1vh solid #fff; */
+    /* align-items: center; */
+    background: rgb(253, 253, 253) url("img/tiles.jpg") center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.game-score {
+    position: absolute;
+    top: 90vh;
+    /* left: 50%; */
+    text-align: center;
+}
+
+.game-start {
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    width: 10%;
+    height: 5vh;
+    color: white;
+    background-color: rgb(45, 130, 241);
+
+}
+
+.game-start:hover {
+    background-color: rgb(29, 76, 138);
+    cursor: pointer;
+}
